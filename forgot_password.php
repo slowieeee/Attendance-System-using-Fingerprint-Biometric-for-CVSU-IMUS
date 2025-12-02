@@ -78,8 +78,8 @@ try {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server
         $mail->SMTPAuth = true;
-        $mail->Username = 'cvsuimusattendance@gmail.com'; // Replace with your email
-        $mail->Password = 'mzls tsqj gqqi pauh';         // Replace with your email password
+        $mail->Username = ''; // Replace with your email
+        $mail->Password = '';         // Replace with your email password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -106,3 +106,4 @@ try {
 } catch (Exception $e) {
     echo json_encode(['status' => 'error', 'message' => 'An error occurred. Please try again later.']);
 }
+
